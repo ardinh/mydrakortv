@@ -1,0 +1,16 @@
+package com.mydrakortv.beta.network.api;
+
+import com.mydrakortv.beta.model.User;
+
+import retrofit2.Call;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.Header;
+import retrofit2.http.POST;
+
+public interface PhoneNumberApi {
+    @FormUrlEncoded
+    @POST("firebase_auth")
+    Call<User> postLoginNumberStatus(@Header("API-KEY") String apiKey,
+                               @Field("phone") String phone);
+}

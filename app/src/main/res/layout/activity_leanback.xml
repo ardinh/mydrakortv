@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mydrakortv.beta.ui.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:id="@+id/custom_frame_layout">
+
+    <androidx.leanback.widget.SearchOrbView
+        android:id="@+id/custom_search_orb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="56dp"
+        android:layout_gravity="top|left" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo_dark"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="56dp"
+        android:layout_gravity="top|right" />
+
+    <FrameLayout
+        android:id="@+id/header_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left" />
+
+    <FrameLayout
+        android:id="@+id/rows_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|start"
+        android:layout_marginLeft="300dp" />
+
+</com.mydrakortv.beta.ui.CustomFrameLayout>
